@@ -1,0 +1,30 @@
+.container {
+    margin: auto;
+    max-width: 500px;
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif; 
+    font-size: 20px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 1.4em;  
+    }
+    
+.heading {
+  color: rgb(0, 0, 0);
+  font-size: 70px;
+  font-style: italic;
+  font-weight: bolder;
+  line-height: .9 em;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.nav-link-item {
+  padding-right: 2rem;
+}
+.nav-link-text {
+  color: rgb(19, 114, 27);
+  font-family: "Arial Black"; 
+  font-size: 14px; 
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
