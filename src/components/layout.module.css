@@ -4,7 +4,11 @@
     font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif; 
     font-size: 20px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 1.4em;  
     }
-    
+ 
+.site-title {
+  font-weight: bolder;
+}
+
 .heading {
   color: rgb(0, 0, 0);
   font-size: 70px;
