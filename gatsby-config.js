@@ -8,6 +8,7 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-sharp", 
     "gatsby-plugin-mdx",
+    "gatsby-plugin-sass",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -15,5 +16,12 @@ module.exports = {
         path: `${__dirname}/blog`,
       }
     },
-],
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `wine-q-and-a`,
+        path: `${__dirname}/src/data/wine-q-and-a`,
+      },
+    }
+  ],
 };

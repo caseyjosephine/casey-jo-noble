@@ -1,11 +1,10 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
-import { container,
+import {container,
         heading,
-        navLinks,
-        navLinkItem,
-        navLinkText,
-        siteTitle } 
+        navbar,
+        brandTitle,
+        navbarLinks } 
         from './layout.module.css' 
 
 const Layout = ({ pageTitle, children }) => {
@@ -22,21 +21,31 @@ const Layout = ({ pageTitle, children }) => {
     return (
         <div className={container}>
         <title>{pageTitle} | {data.site.siteMetadata.title}</title>
-        <header className={siteTitle}>{data.site.siteMetadata.title}</header>
-        <nav>
-        <ul className={navLinks}>
-          <li className={navLinkItem}>
-            <Link to="/" className={navLinkText}>
-                Home</Link></li>
-                <li className={navLinkItem}>
-            <Link to="/blog" className={navLinkText}>
-              Blog
-            </Link>
-          </li>
-                <li className={navLinkItem}>
-            <Link to="/about" className={navLinkText}>
-                About</Link></li>
-          </ul>
+        <nav className={navbar}>
+          <div className={brandTitle}><Link to="/">Casey Jo Noble</Link></div>
+          <div className={navbarLinks}>
+            <ul>
+              <li>
+                <Link to="/blog">
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link to="/photos">
+                  Photos
+                </Link>
+              </li>
+              <li>
+                <Link to="/about">
+                  About</Link></li>
+              <li>
+                <Link to="/contact">
+                  Contact</Link></li>
+              <li>
+                <Link to="/wine-q-and-a">
+                  Wine Q&amp;A</Link></li>
+            </ul>
+          </div>
         </nav>
         <main>
           <h1 className={heading}>{pageTitle}</h1>   
